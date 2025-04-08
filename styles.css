@@ -1,0 +1,277 @@
+/* inter-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Inter/inter-v18-cyrillic_latin-regular.woff2')
+    format('woff2');
+}
+/* inter-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Inter/inter-v18-cyrillic_latin-500.woff2') format('woff2');
+}
+/* inter-600 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/Inter/inter-v18-cyrillic_latin-600.woff2') format('woff2');
+}
+/* inter-900 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/Inter/inter-v18-cyrillic_latin-900.woff2') format('woff2');
+}
+/* libre-caslon-display-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Libre Caslon Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Libre-Caslon-Display/libre-caslon-display-v16-latin-regular.woff2')
+    format('woff2');
+}
+
+:root {
+  --white: #ffffff;
+  --main-color: #c39665;
+  --dark-color: #26140f;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  color: var(--dark-color);
+  background-color: var(--main-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1365px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--main-color);
+  background-color: var(--dark-color);
+  border: 2px solid var(--dark-color);
+  border-radius: 10px;
+}
+
+.button:hover {
+  color: var(--dark-color);
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+/* Header */
+.menu {
+  background-color: var(--dark-color);
+}
+
+.link {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.link:hover {
+  color: var(--main-color);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 48px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/* Hero-section */
+.hero-title {
+  color: var(--white);
+  font-family: 'Libre Caslon Display', serif;
+  font-size: 200px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.hero-section {
+  padding: 150px 0;
+  background-image: url(./images/hero-section-cup.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Welcoming */
+.welcoming {
+  color: var(--white);
+  background-color: var(--dark-color);
+  text-align: center;
+}
+
+.welcoming-text {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+}
+
+/* About-us */
+.about-us-container {
+  display: flex;
+  gap: 50px;
+}
+
+.about-us-img {
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  max-height: 700px;
+}
+
+/* Our-team */
+.our-team-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-team-article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.our-team-img {
+  width: 100%;
+  max-width: 430px;
+  height: 100%;
+  max-height: 330px;
+}
+
+/* Menu */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-lists {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.menu-list {
+  list-style-type: disc;
+}
+
+/* Weak-menu */
+.weak-menu-options {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.weak-menu-img {
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  max-height: 530px;
+}
+
+/* Join-us */
+.join-us-info {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.join-us-img {
+  width: 100%;
+  max-width: 675px;
+  height: 100%;
+  max-height: 530px;
+}
+
+/* Contacts */
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer-p {
+  color: var(--white);
+  margin: 0;
+}
